@@ -1,0 +1,12 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editors & IDEs
+.idea/
+.vscode/
+
+# Python / Jupyter leftovers
+.venv/
+__pycache__/
+.ipynb_checkpoints/

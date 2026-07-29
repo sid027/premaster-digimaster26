@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_PASSWORD: example
+
+  adminer:
+    image: adminer:4
+    ports:
+      - "8081:8080"
