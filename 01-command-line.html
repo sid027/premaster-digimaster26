@@ -7508,7 +7508,15 @@ a.anchor-link {
     white-space: normal;
   }
 </style>
-<!-- End of mermaid configuration --></head>
+<!-- End of mermaid configuration --><style type="text/css">
+/* DigiMaster: ASCII diagrams and cheat sheets must keep their alignment.
+   nbconvert's default (white-space: pre-wrap) re-wraps them on narrow windows
+   — students are told to read this beside their terminal, so scroll instead. */
+.jp-RenderedHTMLCommon pre,
+.jp-RenderedHTMLCommon pre code { white-space: pre; }
+.jp-RenderedHTMLCommon pre { overflow-x: auto; }
+</style>
+</head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cell-000">
@@ -8371,7 +8379,7 @@ Desktop  Documents  Downloads  ...
 <p><strong>Shutting down properly:</strong> close the browser tab, then go to the terminal and press <strong>Ctrl + C</strong> — Jupyter asks <code>Shutdown this Jupyter server (y/[n])?</code> → type <code>y</code>, Enter. Your prompt returns (still with <code>(.venv)</code> — the toolbox is open until you <code>deactivate</code> or close the terminal).</p>
 <blockquote>
 <p>💡 <strong>The daily ritual</strong> — coming back tomorrow is three lines: <code>cd python_playground</code>, then <code>source .venv/bin/activate</code>, then <code>jupyter lab</code>.</p>
-<p>💡 <strong>This is how you read the rest of the course.</strong> The remaining three notebooks are <code>.ipynb</code> files — Jupyter files. Download them (the next notebook shows you the professional way, with Git; until then, the course page has a download link), put them in a folder, start Jupyter there with the ritual above, and click a notebook in the file list to read it. You can also read them in your web browser on GitHub without any of this — but you have Jupyter now, so you may as well use the real thing.</p>
+<p>💡 <strong>This is how you read the rest of the course.</strong> The remaining three notebooks are <code>.ipynb</code> files — Jupyter files. Get them onto your computer (the course page explains the ZIP download; the next notebook teaches the professional way, with Git). Then three lines: open your toolbox from wherever you are by giving its full address — <code>source ~/python_playground/.venv/bin/activate</code> — then <code>cd</code> into the folder that holds the notebooks, then <code>jupyter lab</code>. Click a notebook in the file list to read it. You can also read them in your web browser on GitHub without any of this — but you have Jupyter now, so you may as well use the real thing.</p>
 </blockquote>
 <blockquote>
 <p>✅ <strong>Checkpoint</strong> — You installed Python, created and activated a venv (prompt shows <code>(.venv)</code>), installed Jupyter with pip, started JupyterLab in the browser, ran <code>2 + 2</code>, and shut it down cleanly. That <em>is</em> a real development-environment setup — the same one you will use throughout your studies.</p>
@@ -8501,6 +8509,7 @@ PYTHON &amp; JUPYTER (the graduation kit)
   python3.14 --version         is Python there?
   python3.14 -m venv .venv     build the project toolbox (once per project)
   source .venv/bin/activate    open toolbox
+  source ~/python_playground/.venv/bin/activate   open toolbox from any folder
   deactivate                   close toolbox
   pip install jupyter          install tools into the open toolbox
   jupyter lab                  start Jupyter    stop: Ctrl + C, then y

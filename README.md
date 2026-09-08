@@ -57,17 +57,21 @@ This also gets you the other notebooks and the example projects you need in Note
 
 **Read them in your browser (no setup):** click the file on GitHub — for example [02-git.ipynb](02-git.ipynb) — and it is displayed as a nicely formatted document. Nothing to install, works on any computer.
 
-**Or open them in your own Jupyter (the real thing):** at the end of Notebook 1 you installed Jupyter, so you can read them the way they were written. In your terminal, go to the folder containing the files, activate the environment, and start Jupyter:
+**Or open them in your own Jupyter (the real thing):** at the end of Notebook 1 you installed Jupyter, so you can read them the way they were written. Three lines in your terminal — open your toolbox (it lives in `python_playground`, so give its full address), go to the folder that holds the notebooks, and start Jupyter:
 
 ```
-source .venv/bin/activate
+source ~/python_playground/.venv/bin/activate
+```
+
+```
+cd ~/premaster-digimaster26
 ```
 
 ```
 jupyter lab
 ```
 
-Then click a notebook in the file list on the left. (Notebook 1 walks through this in detail — it is the "daily ritual" at the end of section 9.)
+The middle line assumes you cloned the course with Git as shown in Notebook 2 — if you unzipped it somewhere else, `cd` to that folder instead. Then click a notebook in the file list on the left. (Notebook 1, section 9, explains every piece of this.)
 
 > 💡 Double-clicking an `.ipynb` file on your computer without Jupyter shows unreadable raw text. That is normal — notebooks need a viewer, which is precisely why Notebook 1 has you install one.
 
